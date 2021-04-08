@@ -11,7 +11,8 @@
 local item = ...
 local game = item:get_game()
 
-local pack0 = {
+local packs = {
+  [1] = {
   {"heart", 1},
   {"heart", 1},
   {"heart", 1},
@@ -20,9 +21,9 @@ local pack0 = {
   {"heart", 1},
   {"heart", 1},
   {"rupee", 1},
-}
+  },
 
-local pack1 = {
+  [2] = {
   {"rupee", 2},
   {"rupee", 1},
   {"rupee", 2},
@@ -31,9 +32,9 @@ local pack1 = {
   {"rupee", 1},
   {"rupee", 2},
   {"rupee", 2},
-}
+  },
 
-local pack2 = {
+  [3] = {
   {"magic_jar", 2},
   {"magic_jar", 1},
   {"magic_jar", 1},
@@ -42,9 +43,9 @@ local pack2 = {
   {"magic_jar", 1},
   {"heart", 1},
   {"magic_jar", 1},
-}
+  },
 
-local pack3 = {
+  [4] = {
   {"bomb_refill", 1},
   {"bomb_refill", 1},
   {"bomb_refill", 1},
@@ -53,9 +54,9 @@ local pack3 = {
   {"bomb_refill", 1},
   {"bomb_refill", 5},
   {"bomb_refill", 1},
-}
+  },
 
-local pack4 = {
+  [5] = {
   {"arrow_refill", 2},
   {"heart", 1},
   {"arrow_refill", 2},
@@ -64,9 +65,9 @@ local pack4 = {
   {"heart", 1},
   {"arrow_refill", 2},
   {"arrow_refill", 3},
-}
+  },
 
-local pack5 = {
+  [6] = {
   {"magic_jar", 1},
   {"rupee", 1},
   {"heart", 1},
@@ -75,9 +76,9 @@ local pack5 = {
   {"bomb_refill", 1},
   {"rupee", 1},
   {"heart", 1},
-}
+  },
 
-local pack6 = {
+  [7] = {
   {"heart", 1},
   {"fairy", 1},
   {"magic_jar", 2},
@@ -86,46 +87,26 @@ local pack6 = {
   {"heart", 1},
   {"rupee", 3},
   {"arrow_refill", 3},
+  },
 }
 
--- Event called when all items have been created.
-function item:on_started()
-
-  -- Initialize the properties of your item here,
-  -- like whether it can be saved, whether it has an amount
-  -- and whether it can be assigned.
-
-
-
-end
-
--- Event called when a pickable treasure representing this item
--- is created on the map.
 function item:on_pickable_created(pickable)
 
---  This is a mess. Ready?
-  local packs = {0, 1, 2, 3, 4, 5, 6}
-  local pack = packs[variant]
-  if pack == nil then
-    error("Invalid variant '" .. variant .. "' for item 'pack'")
-  elseif pack = pack1 or pack2 or pack4 or pack5 or pack6 then
-    chance = math.random(0, 1)
-     if chance = 1 then
-       local x = 1
-         map:create_pickable(prize_packs/pack, variant)
-       do x = x + 1 end
-         if x > 8 then
-         x = 1
-         end
-     end
-  else
-    local x = 1
-    map:create_pickable(pack, 3)
-    do x = x + 1 end
-      if x > 8 then
-      x = 1
-      end
-  end
+  local _,variant = pickable:get_treasure() -- pickable:get_treasure returns the item, variant, and savegame variable in that order
+  local x,y,layer = pickable:get_position()
 
-  -- You can set a particular movement here if you don't like the default one.
+  local pack_list = packs[variant]
+  local save_key = "pack_index."..variant
+  local pack_index = game:get_value(save_key) or 1
+  map:create_pickable{
+    x=x, y=y, layer=layer,
+    treasure_name = pack_list[pack_index][1]
+    treasure_variant = pack_list[pack_index][2]
+  }
+
+  pack_index = pack_index + 1
+
+  if pack_index>#pack_list then pack_index = 1 end
+  game:set_value(save_key, pack_index)
+
 end
