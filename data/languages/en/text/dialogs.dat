@@ -1,0 +1,64 @@
+dialog{
+  id = "Impa.help",
+  text = [[
+##Impa
+Thank you for chasing off those monsters!
+But even with your courage, you're just a
+child. Please, do what you can to help, but
+be careful!
+Here, you dropped this.
+]],
+}
+
+dialog{
+  id = "Impa.safe",
+  text = [[
+##Impa
+I'll be safe here. Go on and do
+what you must, the princess
+needs you!
+]],
+}
+
+dialog{
+  id = "_treasure.equipment/shield.1",
+  text = [[
+You got your shield! You can keep safe
+from weak enemy projectiles with this!
+]],
+}
+
+dialog{
+  id = "_treasure.equipment/sword.1",
+  text = [[
+You got the Sword!
+This will come in handy!
+]],
+}
+
+dialog{
+  id = "save_quit",
+  text = [[
+                   $? Continue
+                 $? Save and quit
+              $? Quit without saving
+]],
+}
+
+dialog{
+  id = "sword_old_man.forgive_me",
+  text = [[
+##Old Man
+I hope one day you will forgive me.
+]],
+}
+
+dialog{
+  id = "sword_old_man.take_this",
+  text = [[
+##Old Man
+It's dangerous to go
+alone. Take this.
+]],
+}
+

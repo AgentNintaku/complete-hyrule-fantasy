@@ -1,0 +1,16 @@
+quest{
+  solarus_version = "1.6",
+  write_dir = "e75bba1d-2adb-4f48-9b5e-791415add22f",
+  title = "The Complete Hyrule Fantasy",
+  short_description = "A remake of the first two Legend of Zelda games combined into one epic tale.",
+  long_description = [[
+]],
+  author = "Nintaku",
+  quest_version = "",
+  release_date = "",
+  website = "",
+  normal_quest_size = "320x240",
+  min_quest_size = "320x240",
+  max_quest_size = "320x240",
+}
+
