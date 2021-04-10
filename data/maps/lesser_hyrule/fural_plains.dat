@@ -5,6 +5,7 @@ properties{
   height = 240,
   min_layer = 0,
   max_layer = 2,
+  world = "Faron",
   tileset = "out/outside_main",
   music = "overworld",
 }
@@ -15,7 +16,7 @@ tile{
   y = 0,
   width = 320,
   height = 240,
-  pattern = "907",
+  pattern = "14667",
 }
 
 tile{
@@ -1224,6 +1225,132 @@ tile{
   pattern = "1030",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "13217",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "13217",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "13217",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "13217",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "100",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "84",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "100",
+}
+
 destination{
   name = "starting_destination",
   layer = 0,
@@ -1248,7 +1375,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 248,
-  destination_map = "lesser_hyrule/start",
+  destination_map = "lesser_hyrule/fural_plains",
 }
 
 teletransporter{
@@ -1257,7 +1384,7 @@ teletransporter{
   y = -16,
   width = 320,
   height = 16,
-  destination_map = "lesser_hyrule/start",
+  destination_map = "lesser_hyrule/fural_plains",
 }
 
 teletransporter{
@@ -1266,7 +1393,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 248,
-  destination_map = "lesser_hyrule/start",
+  destination_map = "lesser_hyrule/fural_plains",
 }
 
 destination{
@@ -1281,7 +1408,7 @@ npc{
   name = "Impa",
   layer = 0,
   x = 104,
-  y = 149,
+  y = 77,
   direction = 3,
   subtype = 1,
   sprite = "npc/lady_blue",

@@ -5,6 +5,7 @@ properties{
   height = 240,
   min_layer = 0,
   max_layer = 2,
+  world = "Faron",
   tileset = "dungeon/dark_brown",
   music = "cave",
 }
@@ -561,10 +562,10 @@ tile{
 sensor{
   name = "sensor",
   layer = 0,
-  x = 120,
-  y = 69,
-  width = 96,
-  height = 112,
+  x = 32,
+  y = 157,
+  width = 272,
+  height = 16,
 }
 
 destination{
@@ -582,7 +583,7 @@ teletransporter{
   y = 216,
   width = 16,
   height = 16,
-  destination_map = "lesser_hyrule/start",
+  destination_map = "lesser_hyrule/fural_plains",
   destination = "from_sword_cave",
 }
 
@@ -611,6 +612,7 @@ destructible{
   layer = 0,
   x = 208,
   y = 61,
+  treasure_name = "consumables/heart",
   sprite = "destructibles/vase",
   destruction_sound = "stone",
 }
@@ -619,6 +621,7 @@ destructible{
   layer = 0,
   x = 192,
   y = 61,
+  treasure_name = "consumables/heart",
   sprite = "destructibles/vase",
   destruction_sound = "stone",
 }
@@ -627,6 +630,7 @@ destructible{
   layer = 0,
   x = 192,
   y = 77,
+  treasure_name = "consumables/heart",
   sprite = "destructibles/vase",
   destruction_sound = "stone",
 }
@@ -635,6 +639,7 @@ destructible{
   layer = 0,
   x = 208,
   y = 77,
+  treasure_name = "consumables/heart",
   sprite = "destructibles/vase",
   destruction_sound = "stone",
 }

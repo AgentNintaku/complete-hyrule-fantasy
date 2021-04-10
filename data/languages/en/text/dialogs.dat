@@ -1,4 +1,12 @@
 dialog{
+  id = "Eagle.sign",
+  text = [[
+##Sign
+Hyrule Castle
+]],
+}
+
+dialog{
   id = "Impa.help",
   text = [[
 ##Impa
@@ -31,8 +39,93 @@ from weak enemy projectiles with this!
 dialog{
   id = "_treasure.equipment/sword.1",
   text = [[
-You got the Sword!
+You got a Sword!
 This will come in handy!
+]],
+}
+
+dialog{
+  id = "prologue.ganon_2",
+  text = [[
+One day, the Great Demon King Ganon, who
+planned to rule the world with darkness and fear,
+led an evil army, invaded the kingdom, and
+snatched the Triforce of Power.
+]],
+}
+
+dialog{
+  id = "prologue.impa_4",
+  text = [[
+At the same time, she commanded her most
+trustworthy nursemaid, Impa, to secretly escape
+into the land and go find a person with enough
+courage to destroy the evil Ganon.
+Impa fled desperately through forests and over
+mountains, but finally, her strength exhausted,
+Ganon's underlings surrounded her.
+Cornered! What could she do? ... But wait!
+]],
+}
+
+dialog{
+  id = "prologue.intro_1",
+  text = [[
+
+A long, long time ago the World was in an age of Chaos.
+
+
+In the midst of this chaos, in a little kingdom in the land of
+Hyrule, a legend was being handed down from generation
+to generation, the legend of the "Triforce"; golden triangles
+possessing mystical powers.
+]],
+}
+
+dialog{
+  id = "prologue.justice_6",
+  text = [[
+Burning with a sense of justice, Link was
+determined to free the princess. But to do
+this, and oppose the owner of the Triforce of
+Power, Ganon, the shards of the Triforce of
+Wisdom had to be gathered. If not, an
+invasion of Death Mountain, Ganon's fortress,
+would fail.
+]],
+}
+
+dialog{
+  id = "prologue.link_5",
+  text = [[
+All was not lost. One child appeared and
+skillfully confused the underlings.
+Impa was rescued. The child's name was
+Link.
+During his travels he had come across
+Impa and Ganon's henchmen. Impa told
+Link the whole story of the princess Zelda
+and the evil Ganon.
+]],
+}
+
+dialog{
+  id = "prologue.only_you_7",
+  text = [[
+Can Link really destroy Ganon and save
+the Princess Zelda? Only your skill can
+answer that question.
+]],
+}
+
+dialog{
+  id = "prologue.zelda_3",
+  text = [[
+Fearing his wicked rule, Zelda, the princess
+of this kingdom, split up the Triforce of Wisdom
+into eight fragments and hid them throughout the
+realm to save the last remaining Triforce from
+the cluthes of the evil Ganon.
 ]],
 }
 
@@ -42,6 +135,14 @@ dialog{
                    $? Continue
                  $? Save and quit
               $? Quit without saving
+]],
+}
+
+dialog{
+  id = "shop.buy_something",
+  text = [[
+##Shopkeep
+Buy somethin', will ya?
 ]],
 }
 

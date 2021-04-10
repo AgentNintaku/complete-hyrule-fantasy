@@ -1,0 +1,14 @@
+animation{
+  name = "triforce-shard",
+  src_image = "items/quest/triforce_shards.png",
+  directions = {
+    { x = 16, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 72, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 104, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 136, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 160, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 200, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 232, y = 8, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
