@@ -98,12 +98,12 @@ function item:on_pickable_created(pickable)
   local save_key = "pack_index."..variant
 
   local pack_index = game:get_value(save_key) or 1
-  map:create_pickable({
+  map:create_pickable{
     x=x, y=y, layer=layer,
-    treasure_name = pack_list[pack_index][1]
-    treasure_variant = pack_list[pack_index][2]} -- Error: Failed to load script 'items/prize_packs': items/prize_packs.lua:104: '}' expected (to close '{' at line 101) near 'treasure_variant'
+    treasure_name = pack_list[pack_index][1],
+    treasure_variant = pack_list[pack_index][2] -- Error: Failed to load script 'items/prize_packs': items/prize_packs.lua:104: '}' expected (to close '{' at line 101) near 'treasure_variant'
     -- Have to fix later.
-  )
+  }
 
   pack_index = pack_index + 1
 
